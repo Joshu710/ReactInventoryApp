@@ -3,12 +3,12 @@ import "./App.css";
 import SearchBar from "./SearchBar";
 import AddItem from "./AddItem";
 import ItemsDisplay from "./ItemsDisplay";
-//import Test from "./Class";
+import Test from "./Class";
 
 function App() {
   const [filters, setFilters] = useState({});
   const [data, setData] = useState({ items: [] });
-  //const [showTest, setShowTest] = useState(true);
+  const [showTest, setShowTest] = useState(true);
 
   useEffect(() => {
     fetch("http://localhost:3000/items")
@@ -102,7 +102,7 @@ function App() {
       <div className="row mt-3">
         <AddItem addItem={addItemToData}></AddItem>
       </div>
-      {/*{showTest ? <Test destroy={setShowTest}></Test> : null}*/}
+      {showTest ? <Test destroy={setShowTest}></Test> : null}
     </div>
   );
 }
