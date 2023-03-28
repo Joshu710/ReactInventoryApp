@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "name": "Iphone",
+      "price": "1000",
+      "type": "Phone",
+      "brand": "Apple",
+      "id": 1
+    },
+    {
+      "name": "S23",
+      "price": "699",
+      "type": "Phone",
+      "brand": "Samsung",
+      "id": 2
+    }
+  ]
+}
